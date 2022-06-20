@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+.formu {
+    margin: 15px;
+    padding: 15px;
+    width: 98%;
+    height: 500px;
+    background-color: #6272A3;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0,0 / 30%); 
+}
+
+
+.encabezado {
+    background-color: #A38D52;
+    color: hsl(0, 0%, 96%);
+    margin: auto;
+    height: 100px; 
+    font-family: 'Roboto', sans-serif;    
+    font-size: 25px;
+}
+
+.encabezado h1{
+    padding: 15px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Poppins'
+}
+
+h2{
+    display: grid;
+    margin: 15px 15px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.flex-container ul{
+    display: flex; 
+    background-color: #A38D52;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    list-style-type: none;
+  
+}
+
+ul li a {
+    display: inline-block;
+    padding: 15px 90px;
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover {
+    background-color: #6272A3 ;
+}
+
+.conten{
+  
+    background-image: url("../images/productos75.jpg");
+    background-size: cover;
+    padding: 30px;
+    height: 750px;
+  
+}
+.conten h2, .locales h2{ 
+    display: grid ;
+    justify-content: center;
+    
+
+}
+
+.conteiner{ 
+    display: grid;
+    grid-template-columns: (6, 1fr);
+    grid-template-areas:
+    "torta1 torta1 torta2 torta2 torta3 torta3 "
+    "torta4 torta4 torta5 torta5 torta6 torta6 ";
+    gap:20px;
+  
+
+}
+
+.torta img {
+    max-width: 100%;
+    border: solid 2px black;
+    
+}
+.torta1{
+    grid-area: torta1;
+    
+}
+.torta2{
+    grid-area: torta2;
+      
+}
+.torta3{
+    grid-area: torta3;   
+   
+}
+.torta4{
+    grid-area: torta4;
+    
+   
+}
+.torta5{
+    grid-area: torta5;
+
+}.torta6{
+    grid-area: torta6;
+}
+
+
+.historia{
+    background-image: url("../images/pane.jpg");
+    background-size: cover;
+    padding: 30px;
+    height:500px;
+    /* justify-content: space-around; */
+    
+}
+.historia .titulos { 
+    display: grid;
+    align-items: center;
+    padding: 30px 30px 30px 30px;;
+    margin: 20px auto;
+
+}
+.locales{
+    background-image: url("../images/fondo.jpg");
+    background-size: cover;
+    padding: 30px;
+    height: 350px;
+}
+    
+
+.contenido{
+    width: 98%;
+    margin: 20px auto;
+    padding-left: 50px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    
+}
+
+.ubimayor{
+height: max-content;
+
+}
+.ubi{
+    width: auto;
+    padding: 15px;
+    
+}
+.footers{
+    background-color:#A38D52 ;
+    color: #020305;
+    height: 150px ;
+    
+ 
+}
+
+/* media queries responsive */
+
+@media screen and (max-width:768px)
+{
+    
+    .encabezado h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap ;
+        font-size: 25px;
+      
+    }
+    
+    .flex-container ul{
+        display: flex;
+        flex-direction: column;
+            }
+
+    .conteiner {grid-template-areas:
+    "torta1"
+    "torta2"
+    "torta3"
+    "torta4"
+    "torta5"
+    "torta6"
+;
+    }
+    .footers{
+        display: flex;
+        flex-wrap: wrap ;
+        
+        
+ 
+}
+.ubimayor{
+    height: max-content;
+}
+
+}
+.conten{ height: max-content;
+}
+.historia {
+    height: max-content;
+}
+.locales {
+    height: max-content;
+    padding: 15px;
+}
+.contenido{
+    
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+}
+
+ 
+
+
+
+   
+
+
+
